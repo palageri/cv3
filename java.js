@@ -7,7 +7,15 @@ const cvData = {
         { degree: "BSc Informatika", institution: "Budapesti Műszaki Egyetem", years: "2016 - 2020" },
         { degree: "Érettségi", institution: "Budapesti Gimnázium", years: "2012 - 2016" }
     ],
-    contact: "janos.kiss@example.com"
+    contact: "janos.kiss@example.com",
+    skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Git"
+    ]
 };
 
 // Betölti a tapasztalatokat
@@ -35,4 +43,12 @@ if (document.getElementById("email")) {
     document.getElementById("email").innerText = cvData.contact;
 }
 
-
+// Betölti a képességeket
+if (document.getElementById("skills-list")) {
+    const skillsList = document.getElementById("skills-list");
+    cvData.skills.forEach(skill => {
+        const li = document.createElement("li");
+        li.innerText = skill;
+        skillsList.appendChild(li);
+    });
+}
