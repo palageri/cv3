@@ -12,17 +12,50 @@
             <li><a href="index.html">Kezdőlap</a></li>
             <li><a href="experience.html">Tapasztalat</a></li>
             <li><a href="education.html">Oktatás</a></li>
-            <li><a href="contact.html">Kapcsolat</a></li>
             <li><a href="skills.html">Képességek</a></li>
-
+            <li><a href="contact.html">Kapcsolat</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <h1>Palasics Gergő, CEO</h1>
-        <p>Házak megújuló energiával foglalkozom. Cégemmel, a EcoBoostHouses-zal az elmúlt tíz évben Európa szerte terveztünk és építettünk rendszereket.</p>
+        <p>Házak megújufó energiával foglalkozom. Cégemmel, a EcoBoostHouses-zal az elmúlt tíz évben Európa szerte terveztünk és építettünk rendszereket.</p>
+
+        <h2>Időjárás Kereső</h2>
+        <form id="weatherForm">
+            <input type="text" id="city" placeholder="Város neve" required />
+            <button type="submit">Keresés</button>
+        </form>
+
+        <div id="weatherResult"></div>
     </div>
+
+    <script>
+        document.getElementById('weatherForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const city = document.getElementById('city').value;
+            const apiKey = 'a88f2e335009801ee8d06077f3ebd79d';
+
+            try {
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+                if (!response.ok) throw new Error('Hiba történt a város keresésekor.');
+
+                const data = await response.json();
+                const weatherDescription = data.weather[0].description;
+                const temperature = data.main.temp;
+
+                document.getElementById('weatherResult').innerHTML = `
+                    <h3>Időjárás ${city}-ban:</h3>
+                    <p>Hőmérséklet: ${temperature} °C</p>
+                    <p>Leírás: ${weatherDescription}</p>
+                `;
+            } catch (error) {
+                document.getElementById('weatherResult').innerHTML = `<p>${error.message}</p>`;
+            }
+        });
+    </script>
 </body>
 </html>
+
 
 

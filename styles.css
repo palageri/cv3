@@ -45,13 +45,14 @@ h1, h2 {
 
 
 ul {
-    color: white;
-    list-style-type: none;
+    color: rgb(0, 0, 0);
+    list-style-type: disc;
     padding: 0;
+    
 }
 
 li {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0);
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
