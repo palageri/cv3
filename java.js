@@ -1,24 +1,29 @@
 const cvData = {
     experience: [
-        { jobTitle: "Frontend Fejlesztő", company: "XYZ Kft.", years: "2020 - 2023" },
-        { jobTitle: "Webfejlesztő Gyakornok", company: "ABC Zrt.", years: "2019 - 2020" }
+        { jobTitle: "CEO", company: "EcoBoostHouse Kft.", years: "2022 - 2024" },
+        { jobTitle: "projektfelelős", company:"CoolingBuda Kft.", years: "2020-2021"}, 
+        { jobTitle: "Elemző mérnök gyakornok", company: "MVM Zrt.", years: "2017 - 2019" }
     ],
     education: [
-        { degree: "BSc Informatika", institution: "Budapesti Műszaki Egyetem", years: "2016 - 2020" },
-        { degree: "Érettségi", institution: "Budapesti Gimnázium", years: "2012 - 2016" }
+        { degree: "Energetikai Mérnök", institution: "Budapesti Műszaki Egyetem", years: "2012 - 2016" },
+        { degree: "Érettségi", institution: "Kazinczy Ferenc Gimnázium", years: "2008 - 2012" }
     ],
-    contact: "janos.kiss@example.com",
+    contact: "palasicsGergo@ecoboosthouse.hu",
+   
+
+
     skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Node.js",
-        "Git"
+        "klímaberendezések beszerelése",
+        "hőszivattyús rendszerek telepítése",
+        "napelemek telepítése",
+        "okosotthon rendszerek kialakítása",
+        "elektromos hálózat fejlesztés",
+        "szellőztetési rendszerek tervezése",
+        "levegőtisztító rendszerek telepítése"
     ]
 };
 
-// Betölti a tapasztalatokat
+
 if (document.getElementById("experience-list")) {
     const experienceList = document.getElementById("experience-list");
     cvData.experience.forEach(exp => {
@@ -28,7 +33,7 @@ if (document.getElementById("experience-list")) {
     });
 }
 
-// Betölti az oktatási adatokat
+
 if (document.getElementById("education-list")) {
     const educationList = document.getElementById("education-list");
     cvData.education.forEach(edu => {
@@ -38,12 +43,12 @@ if (document.getElementById("education-list")) {
     });
 }
 
-// Betölti a kapcsolatot
+
 if (document.getElementById("email")) {
     document.getElementById("email").innerText = cvData.contact;
 }
 
-// Betölti a képességeket
+
 if (document.getElementById("skills-list")) {
     const skillsList = document.getElementById("skills-list");
     cvData.skills.forEach(skill => {
