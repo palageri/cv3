@@ -1,14 +1,14 @@
 const cvData = {
     experience: [
         { jobTitle: "CEO", company: "EcoBoostHouse Kft.", years: "2022 - 2024" },
-        { jobTitle: "projektfelelős", company:"CoolingBuda Kft.", years: "2020-2021"}, 
+        { jobTitle: "Projektfelelős", company:"CoolingBuda Kft.", years: "2020-2021"}, 
         { jobTitle: "Elemző mérnök gyakornok", company: "MVM Zrt.", years: "2017 - 2019" }
     ],
     education: [
         { degree: "Energetikai Mérnök", institution: "Budapesti Műszaki Egyetem", years: "2012 - 2016" },
         { degree: "Érettségi", institution: "Kazinczy Ferenc Gimnázium", years: "2008 - 2012" }
     ],
-    contact: "palasicsGergo@ecoboosthouse.hu",
+    contact: "palasicsgergo@ecoboosthouse.hu",
    
 
 
