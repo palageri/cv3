@@ -1,7 +1,7 @@
 const cvData = {
     experience: [
         { jobTitle: "CEO", company: "EcoBoostHouse Kft.", years: "2022 - 2024" },
-        { jobTitle: "Projektfelelős", company:"CoolingBuda Kft.", years: "2020-2021"}, 
+        { jobTitle: "Projektfelelős", company:"HD SYSTEM NATURAL Kft.", years: "2020-2021"}, 
         { jobTitle: "Elemző mérnök gyakornok", company: "MVM Zrt.", years: "2017 - 2019" }
     ],
     education: [

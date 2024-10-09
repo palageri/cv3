@@ -10,8 +10,8 @@ body {
 }
 
 nav img {
-    height: 60px; /* Állítsd be a kívánt magasságot */
-    margin-right: 15px; /* Kép és a menüelem közötti távolság */
+    height: 60px; 
+    margin-right: 15px; 
 }
 
 nav {
@@ -54,9 +54,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed; /* Rögzített pozíció */
-    bottom: 0; /* Aljára igazítás */
-    left: 0; /* Balra igazítás */
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
     width: 100%; 
 }
 
